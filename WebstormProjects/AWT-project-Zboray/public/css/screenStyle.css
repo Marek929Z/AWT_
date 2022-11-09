@@ -1,0 +1,186 @@
+body{
+
+    background-color: wheat;
+    font-family: Roboto-Bold, "Times New Roman", Arial, serif;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+main{
+    margin: 2rem 15rem;
+}
+footer{
+    margin: 2rem 15rem;
+}
+.nazovstranky{
+    font-size: 4rem;
+}
+h1{
+    margin: 2rem 15rem;
+    font-family: Roboto-Light, serif;
+    text-align: center;
+    line-height: normal;
+    color: azure;
+    background-color: #666666;
+}
+h2{
+    font-family: Roboto-Bolt, serif;
+    text-align: justify;
+    line-height: normal;
+
+}
+.sahajda{
+    max-width: 100%;
+    border-style: solid;
+
+}
+.vitazi{
+
+    max-width: 100%;
+    border-style: solid;
+    margin-top: 1.25rem;
+}
+
+.Dzurinda{
+    max-width: 100%;
+    border-style: solid;
+}
+.bezci{
+    max-width: 90%;
+    border-style: solid;
+    float: right;
+
+}
+.logo{
+    max-width: 30%;
+}
+table, th, td{
+    font-family: Roboto-Bolt, serif;
+    margin: auto;
+    position: static;
+    border: solid 0.1rem black;
+    width: 90%;
+}
+div {
+    font-family: Roboto-Bold, serif;
+    text-align: justify;
+}
+section{
+    font-family: Roboto-Bold, serif;
+    text-align: justify;
+}
+section:hover{
+    background-color: burlywood;
+}
+article{
+    font-family: Roboto-Bold, serif;
+    text-align: justify;
+}
+ol{
+    font-family: Roboto-Bold, serif;
+    list-style-type: decimal;
+}
+ul{
+    font-family: Roboto-Bold, serif;
+    list-style-type: square;
+}
+.clanky{
+    display:inline-block;
+    padding-right: 2rem ;
+    background-color: wheat;
+    animation-name: animate;
+    animation-duration: 10000ms;
+}
+iframe{
+    max-width: 100%;
+    width: 100%;
+    height: 30rem;
+    border-style: solid;
+}
+.articleLink{
+    color: #856404;
+}
+mark{
+    background-color: greenyellow;
+}
+#myDiv {
+    transform: rotate(-10deg) translateY(2rem) translateX(2rem);
+}
+.gridtext{
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    grid-column-gap: 2rem;
+
+
+}
+/*nazor pouzivatelov--*/
+
+.Datapouzivatelov {
+
+}
+
+/*--nazor pouzivatelov*/
+
+/*formular--*/
+.formular{
+    max-width: 100%;
+}
+fieldset{
+    border: 0.21rem solid black;
+}
+legend{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+input:invalid{
+    border: 0.1rem solid red;
+}
+textarea:invalid{
+    border: 0.1rem solid red;
+}
+input{
+    border: 0.1rem solid black;
+}
+.send:hover{
+    background-color: green;
+}
+.delete:hover{
+    background-color: red;
+}
+/*--formular*/
+
+@media (max-width: 57.5rem) {
+
+    main, body, footer {
+        margin: 1rem 1rem;
+        font-size: 0.8rem;
+    }
+    .nazovstranky, h1 {
+        margin: 1rem 1rem;
+    }
+}
+@keyframes animate {
+    0% {
+        background-color: wheat;
+    }
+    25% {
+        background-color: burlywood;
+    }
+    50% {
+        background-color: bisque;
+    }
+    75% {
+        background-color: blanchedalmond;
+    }
+    100%{
+        background-color: wheat;
+    }
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+body{
+    background-color: white;
+    color: black;
+    font-family: Roboto-Bold;
+}
+a{
+    color: black;
+    display: none;
+}
+.clanky{
+    display: none;
+}
+.mailadress{
+    display: none;
+}
+img{
+    display: none;
+}
+iframe{
+    display: none;
+}
+

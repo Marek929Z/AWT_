@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="sk" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Behaj s nami</title>
+    <link rel="stylesheet" href="public/css/screenStyle.css" media="screen">
+    <link rel="stylesheet" href="public/css/printStyle.css" media="print">
+</head>
+<body>
+
+    <img id="myDiv" src="fig/Export1.svg" class="logo" alt="logostranky">
+    <h1 class="nazovstranky">Behaj s nami</h1>
+
+<main>
+
+    <div>
+        <p>
+        Blog behaj s nami sa venuje bežcom, či už rekreačným alebo profesionálnym. Obsahuje novinky zo sveta športu, blížiace sa podujatia a inšpiratívne rozhovory so známymi bežcami. Beh je súčasťou nášho života, je to prirodzený pohyb, ktorý sprevádza každého z nás. Beh je aktivitou, ktorá nás bežcov drží vo skvelej kondící po celý čas. Vďaka behu naše telo dokáže znášať aj tažšie životné situácie, vďaka behu sme pripravení čeliť aj pschickej zátaži. Blog sa venuje behu zo širšieho pohľadu a ponúka čitateľom vidieť beh aj z úplne inej perspektívy. Tento blog je ideálnou vstupnou bránou do bežeckého sveta.
+        </p>
+    </div>
+
+
+    <nav class="clanky">
+        <h2>Nové články</h2>
+        <ul>
+            <li><a href="article1.html" class="articleLink">MMM Košice 2022</a></li>
+            <li><a href="article2.html" class="articleLink">Novinky z bežeckého sveta</a></li>
+            <li><a href="article3.html" class="articleLink">Zaujímavé rozhovory s bežcami</a></li>
+        </ul>
+    </nav>
+
+
+
+
+    <article id="artOpinions">
+        <h2>Názory návštevníkov</h2>
+        <div id="Kontainer"></div>
+    </article>
+
+
+    <h1>Formulár používateľa</h1>
+    <form  id="openForm" class="formular" name="newForm">
+        <fieldset>
+            <legend>Používateľ</legend>
+            <div class="obligatedName">
+                <label for="name">Meno a priezvisko:</label>
+                <input id="name" type="text" name="username" value="" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input id="email" type="email" name="mail" placeholder="Napr: jozkomrkvicka@gmail.com" size="25">
+            </div>
+            <div>
+                Kraj:
+                <input type="text" list="idzoznam" name="pole">
+                <datalist id="idzoznam" >
+                    <option value="Bratislavský">
+                    <option value="Trnavský">
+                    <option value="Trenčianský">
+                    <option value="Nitriansky">
+                    <option value="Žilinský">
+                    <option value="Banskobystrický">
+                    <option value="Prešovský">
+                    <option value="Košický">
+                </datalist>
+            </div>
+            <div>
+                Vložte svoj obrázok:
+                <input id="picture" type="url">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Profil bežca</legend>
+            <div>
+                Bežec:
+                <input type="radio" id="rekre" name="bezec1" value="runner">
+                <label for="rekre" class="short-label">rekreačný</label>
+                <input type="radio" id="akti" name="bezec1" value="runner">
+                <label for="akti" class="short-label">aktívny</label>
+                <input type="radio" id="profi" name="bezec1" value="runner">
+                <label for="profi" class="short-label">profesionálny</label>
+            </div>
+            <div>
+                Bežec:
+                <input type="checkbox" id="cestny" name="checkbox1">
+                <label for="cestny" class="short-label">cestný</label>
+                <input type="checkbox" id="trailovy" name="checkbox2">
+                <label for="trailovy" class="short-label">trailový</label>
+            </div>
+            <label for="textarea22">Váš názor:</label>
+            <p>
+                <textarea id="textarea22" name="textarea1"  rows="5" cols="50"  placeholder="..." required></textarea>
+            </p>
+
+
+
+        </fieldset>
+        <button type="submit" onclick="submit()" class="send" id="sub">Odoslať</button>
+        <button type="reset" class="delete">Vymazať</button>
+    </form>
+    <a href="#artOpinions">Vaše komentáre</a>
+
+</main>
+<footer>
+    <p>autor: Marek Zboray</p>
+    <nav class="mailadress">
+        <p>mail:<a href="mailto:marek.zboray@student.tuke.sk">marek.zboray@student.tuke.sk</a></p>
+    </nav>
+</footer>
+
+<script type="module" src="public/js/sendDataForm.js"></script>
+    <script  type="module" src="public/js/myTreesFormLStoragehtmlWr.js"></script>
+    <script type="module" src="public/js/opinionshandler.js"></script>
+
+</body>
+</html>
