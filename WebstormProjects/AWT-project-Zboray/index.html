@@ -32,10 +32,12 @@
 
 
 
-    <article id="artOpinions">
+    <article  id="artOpinions">
         <h2>Názory návštevníkov</h2>
-        <div id="Kontainer"></div>
+        <div id="opinionsContainer"></div>
+       <a href="#myDiv">Späť na stránku</a>
     </article>
+
 
 
     <h1>Formulár používateľa</h1>
@@ -43,12 +45,12 @@
         <fieldset>
             <legend>Používateľ</legend>
             <div class="obligatedName">
-                <label for="name">Meno a priezvisko:</label>
-                <input id="name" type="text" name="username" value="" required>
+                <label for="nameID">Meno a priezvisko:</label>
+                <input id="nameID" type="text" name="username" value="" required>
             </div>
             <div>
-                <label for="email">Email:</label>
-                <input id="email" type="email" name="mail" placeholder="Napr: jozkomrkvicka@gmail.com" size="25">
+                <label for="emailID">Email:</label>
+                <input id="emailID" type="email" name="mail" placeholder="Napr: jozkomrkvicka@gmail.com" size="25">
             </div>
             <div>
                 Kraj:
@@ -65,7 +67,7 @@
                 </datalist>
             </div>
             <div>
-                Vložte svoj obrázok:
+                Vložte svoju bežeckú fotku:
                 <input id="picture" type="url">
             </div>
         </fieldset>
@@ -73,11 +75,11 @@
             <legend>Profil bežca</legend>
             <div>
                 Bežec:
-                <input type="radio" id="rekre" name="bezec1" value="runner">
+                <input type="radio" id="rekre" name="bezec1" value="on">
                 <label for="rekre" class="short-label">rekreačný</label>
-                <input type="radio" id="akti" name="bezec1" value="runner">
+                <input type="radio" id="akti" name="bezec1" value="on">
                 <label for="akti" class="short-label">aktívny</label>
-                <input type="radio" id="profi" name="bezec1" value="runner">
+                <input type="radio" id="profi" name="bezec1" value="on">
                 <label for="profi" class="short-label">profesionálny</label>
             </div>
             <div>
@@ -87,15 +89,15 @@
                 <input type="checkbox" id="trailovy" name="checkbox2">
                 <label for="trailovy" class="short-label">trailový</label>
             </div>
-            <label for="textarea22">Váš názor:</label>
-            <p>
-                <textarea id="textarea22" name="textarea1"  rows="5" cols="50"  placeholder="..." required></textarea>
-            </p>
 
+            <label for="textareaId">Váš názor na našu stránku:</label>
+            <div>
+                <textarea name="textarea_name" id="textareaId" rows="5" cols="50"  placeholder="..." required></textarea>
+            </div>
 
 
         </fieldset>
-        <button type="submit" onclick="submit()"  class="send" id="sub">Odoslať</button>
+        <button type="submit" onclick="submit()" class="send" id="sub">Odoslať</button>
         <button type="reset" class="delete">Vymazať</button>
     </form>
     <a href="#artOpinions">Vaše komentáre</a>
@@ -110,7 +112,7 @@
 
 <script type="module" src="public/js/sendDataForm.js"></script>
     <script  type="module" src="public/js/myTreesFormLStoragehtmlWr.js"></script>
-    <script type="module" src="public/js/opinionshandler.js"></script>
+    <script type="module" src="public/js/opinionsHandler.js"></script>
 
 </body>
 </html>
