@@ -1,6 +1,6 @@
 
 
-import OpinionsHandler from "./opinionshandler.js";
+import OpinionsHandler from "./opinionsHandler.js";
 
-window.opnsHndlr = new OpinionsHandler("openForm","Kontainer");
+window.opnsHndlr = new OpinionsHandler("openForm","opinionsContainer");
 window.opnsHndlr.init();
